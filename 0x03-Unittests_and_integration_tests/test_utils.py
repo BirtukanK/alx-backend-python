@@ -53,7 +53,7 @@ class TestMemoize(unittest.TestCase):
     """ testing class for memoizing method"""
 
     @patch('utils.a_method')
-    def test_memoize(self):
+    def test_memoize(self, memo_fxn):
         """test memoize"""
         class TestClass:
             def a_method(self):
